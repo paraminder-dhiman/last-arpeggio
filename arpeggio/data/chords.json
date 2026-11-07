@@ -1,0 +1,45 @@
+{
+    "key_order": ["A", "B", "C", "C#", "D#"],
+    "chord_data": {
+        "A": {
+            "top": {"chord": "A", "strings": ["E2", "A2", "E3", "A3", "C#4", "E4"]},
+            "topright": {"chord": "E", "strings": ["E2", "B2", "E3", "G#3", "B3", "E4"]},
+            "bottomright": {"chord": "Bm", "strings": ["F#2", "B2", "F#3", "B3", "D4", "F#4"]},
+            "bottom": {"chord": "F#m", "strings": ["F#2", "C#3", "F#3", "A3", "C#4", "F#4"]},
+            "bottomleft": {"chord": "C#m", "strings": ["G#2", "C#3", "G#3", "C#4", "E4", "G#4"]},
+            "topleft": {"chord": "D", "strings": ["A2", "D3", "A3", "D4", "F#4", "A4"]}
+        },
+        "B": {
+            "top": {"chord": "B", "strings": ["F#2", "B2", "F#3", "B3", "D#4", "F#4"]},
+            "topright": {"chord": "F#", "strings": ["F#2", "C#3", "F#3", "A#3", "C#4", "F#4"]},
+            "bottomright": {"chord": "C#m", "strings": ["G#2", "C#3", "G#3", "C#4", "E4", "G#4"]},
+            "bottom": {"chord": "G#m", "strings": ["G#2", "D#3", "G#3", "B3", "D#4", "G#4"]},
+            "bottomleft": {"chord": "D#m", "strings": ["F#2", "A#2", "D#3", "A#3", "D#4", "F#4"]},
+            "topleft": {"chord": "E", "strings": ["E2", "B2", "E3", "G#3", "B3", "E4"]}
+        },
+        "C": {
+            "top": {"chord": "C", "strings": ["E2", "C3", "E3", "G3", "C4", "E4"]},
+            "topright": {"chord": "G", "strings": ["G2", "B2", "D3", "G3", "B3", "G4"]},
+            "bottomright": {"chord": "Dm", "strings": ["A2", "D3", "A3", "D4", "F4", "A4"]},
+            "bottom": {"chord": "Am", "strings": ["E2", "A2", "E3", "A3", "C4", "E4"]},
+            "bottomleft": {"chord": "Em", "strings": ["E2", "B2", "E3", "G3", "B3", "E4"]},
+            "topleft": {"chord": "F", "strings": ["F2", "C3", "F3", "A3", "C4", "F4"]}
+        },
+        "C#": {
+            "top": {"chord": "C#", "strings": ["F2", "G#2", "C#3", "G#3", "C#4", "F4"]},
+            "topright": {"chord": "G#", "strings": ["G#2", "D#3", "G#3", "C4", "D#4", "G#4"]},
+            "bottomright": {"chord": "D#m", "strings": ["F#2", "A#2", "D#3", "A#3", "D#4", "F#4"]},
+            "bottom": {"chord": "A#m", "strings": ["F2", "A#2", "F3", "A#3", "C#4", "F4"]},
+            "bottomleft": {"chord": "Fm", "strings": ["F2", "C3", "F3", "G#3", "C4", "F4"]},
+            "topleft": {"chord": "F#", "strings": ["F#2", "C#3", "F#3", "A#3", "C#4", "F#4"]}
+        },
+        "D#": {
+            "top": {"chord": "D#", "strings": ["G2", "A#2", "D#3", "A#3", "D#4", "G4"]},
+            "topright": {"chord": "A#", "strings": ["F2", "A#2", "F3", "A#3", "D4", "F4"]},
+            "bottomright": {"chord": "Fm", "strings": ["F2", "C3", "F3", "G#3", "C4", "F4"]},
+            "bottom": {"chord": "Cm", "strings": ["G2", "C3", "G3", "C4", "D#4", "G4"]},
+            "bottomleft": {"chord": "Gm", "strings": ["G2", "D3", "G3", "A#3", "D4", "G4"]},
+            "topleft": {"chord": "G#", "strings": ["G#2", "D#3", "G#3", "C4", "D#4", "G#4"]}
+        }
+    }
+}
