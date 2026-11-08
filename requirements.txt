@@ -2,3 +2,4 @@
 
 pydirectinput
 pygetwindow
+pynput

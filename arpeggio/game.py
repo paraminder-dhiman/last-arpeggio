@@ -49,15 +49,20 @@ class Game:
             time.sleep(self.s["settle"])
         self.wheel = target
 
-    def pluck(self, place):
+    def prepare(self, place):
         self.switch_wheel(place.wheel)
         self.aim(place.direction)
-        self._tap(str(place.key))
+
+    def sound(self, place):
+        self._tap(str(place.key) if place.key else "space")
+
+    def pluck(self, place):
+        self.prepare(place)
+        self.sound(place)
 
     def strum(self, wheel, direction):
-        self.switch_wheel(wheel)
-        self.aim(direction)
-        self._tap("space")
+        self.prepare(guitar.Place(wheel, direction, None))
+        self.sound(guitar.Place(wheel, direction, None))
 
     def go_home(self):
         self.centre()
