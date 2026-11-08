@@ -1,0 +1,23 @@
+{
+  "format": "last-arpeggio-song",
+  "version": 1,
+  "title": "Test Song",
+  "artist": "The Last Arpeggio",
+  "mode": "both",
+  "source": "written by hand",
+  "shift": 0,
+  "meter": [4, 4],
+  "tempo": [[0, 90], [8, 120]],
+  "events": [
+    {"kind": "strum", "beat": 0, "length": 2, "chord": "C"},
+    {"kind": "strum", "beat": 2, "length": 2, "chord": "G"},
+    {"kind": "note", "beat": 4, "length": 1, "note": "E4"},
+    {"kind": "note", "beat": 5, "length": 1, "note": "D4"},
+    {"kind": "note", "beat": 6, "length": 2, "note": "C4"},
+    {"kind": "strum", "beat": 8, "length": 2, "chord": "Am"},
+    {"kind": "strum", "beat": 10, "length": 2, "chord": "F"},
+    {"kind": "note", "beat": 12, "length": 1, "note": "A3"},
+    {"kind": "note", "beat": 13, "length": 1, "note": "G#3"},
+    {"kind": "strum", "beat": 14, "length": 2, "chord": "E"}
+  ]
+}
