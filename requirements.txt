@@ -1,1 +1,4 @@
 # libraries the app needs · added stage by stage, then intalled with: pip install -r requirements.txt
+
+pydirectinput
+pygetwindow

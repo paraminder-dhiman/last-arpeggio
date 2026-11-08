@@ -26,21 +26,27 @@ class Place:
 def _load():
     data = json.loads(DATA.read_text())
     wheels = data["key_order"]
-    note_places, chord_places = {}, {}
+    note_places, chord_places, chord_at = {}, {}, {}
     for w, wheel in enumerate(wheels):
         for direction, info in data["chord_data"][wheel].items():
-            chord_places[info["chord"]] = (w, direction)
+            chord_places.setdefault(info["chord"], []).append((w, direction))
+            chord_at[(w, direction)] = info["chord"]
             for i, note in enumerate(info["strings"]):
                 n = note_to_number(note)
                 note_places.setdefault(n, []).append(Place(w, direction, 6 - i))
-    return wheels, note_places, chord_places
+    return wheels, note_places, chord_places, chord_at
 
-WHEELS, NOTE_PLACES, CHORD_PLACES = _load()
+
+WHEELS, NOTE_PLACES, CHORD_PLACES, CHORD_AT = _load()
+
 HOME_WHEEL = WHEELS.index("C")
 LOWEST, HIGHEST = min(NOTE_PLACES), max(NOTE_PLACES)
 
 def places_for(note):
     return NOTE_PLACES.get(note, [])
 
-def place_of_chord(name):
-    return CHORD_PLACES.get(name)
+def places_of_chord(name):
+    return CHORD_PLACES.get(name, [])
+
+def chord_at(wheel, direction):
+    return CHORD_AT[(wheel, direction)]
