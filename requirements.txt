@@ -4,3 +4,4 @@ pydirectinput
 pygetwindow
 pynput
 mido
+numpy
