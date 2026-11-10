@@ -3,3 +3,4 @@
 pydirectinput
 pygetwindow
 pynput
+mido

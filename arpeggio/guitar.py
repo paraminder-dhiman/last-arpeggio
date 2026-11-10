@@ -50,3 +50,8 @@ def places_of_chord(name):
 
 def chord_at(wheel, direction):
     return CHORD_AT[(wheel, direction)]
+
+def shift_chord(name, semitones):
+    minor = name.endswith("m")
+    root = name[:-1] if minor else name
+    return NOTE_NAMES[(NOTE_NAMES.index(root) + semitones) % 12] + ("m" if minor else "")
