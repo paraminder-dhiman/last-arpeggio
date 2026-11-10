@@ -6,12 +6,16 @@
 
 <p align="center">
   <a href="https://github.com/paraminder-dhiman/last-arpeggio/releases/latest">Download for Windows</a> ·
+  <a href="https://www.youtube.com/watch?v=8TgcBcrl5XU">Watch the demo</a> ·
   <a href="#getting-started">Getting started</a> ·
   <a href="#importing-a-song">Importing a song</a> ·
   <a href="#settings">Settings</a>
 </p>
 
-<!-- demo GIF goes here once it's recorded: docs/demo.gif -->
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=8TgcBcrl5XU"><img src="https://i.ytimg.com/vi/8TgcBcrl5XU/maxresdefault.jpg" width="720" alt="Demo video: The Last Arpeggio playing Ode to Joy and Greensleeves on the guitar in The Last of Us Part II"></a>
+  <br><sub>The demo on YouTube · Ode to Joy and Greensleeves, played in the game by the app</sub>
+</p>
 
 > A fan-made tool. Not affiliated with or endorsed by Naughty Dog or Sony Interactive Entertainment.
 
