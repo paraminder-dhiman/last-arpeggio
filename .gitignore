@@ -2,6 +2,7 @@
 __pycache__/
 build/
 dist/
+release/
 *.spec
 songs/
 settings.json

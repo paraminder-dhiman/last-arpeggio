@@ -1,0 +1,459 @@
+{
+  "format": "last-arpeggio-song",
+  "version": 1,
+  "title": "Greensleeves",
+  "artist": "Traditional",
+  "mode": "both",
+  "source": "greensleeves.mid",
+  "shift": -12,
+  "meter": [
+    3,
+    4
+  ],
+  "tempo": [
+    [
+      0.0,
+      84.0
+    ]
+  ],
+  "events": [
+    {
+      "kind": "strum",
+      "beat": 0.0,
+      "length": 3.0,
+      "chord": "Am"
+    },
+    {
+      "kind": "note",
+      "beat": 1.0,
+      "length": 2.0,
+      "note": "C3"
+    },
+    {
+      "kind": "strum",
+      "beat": 3.0,
+      "length": 6.0,
+      "chord": "C"
+    },
+    {
+      "kind": "note",
+      "beat": 4.0,
+      "length": 1.5,
+      "note": "E3"
+    },
+    {
+      "kind": "note",
+      "beat": 5.5,
+      "length": 0.5,
+      "note": "F3"
+    },
+    {
+      "kind": "note",
+      "beat": 6.0,
+      "length": 1.0,
+      "note": "E3"
+    },
+    {
+      "kind": "note",
+      "beat": 7.0,
+      "length": 2.0,
+      "note": "D3"
+    },
+    {
+      "kind": "strum",
+      "beat": 9.0,
+      "length": 6.0,
+      "chord": "Em"
+    },
+    {
+      "kind": "note",
+      "beat": 10.0,
+      "length": 1.5,
+      "note": "G2"
+    },
+    {
+      "kind": "note",
+      "beat": 11.5,
+      "length": 0.5,
+      "note": "A2"
+    },
+    {
+      "kind": "note",
+      "beat": 12.0,
+      "length": 1.0,
+      "note": "B2"
+    },
+    {
+      "kind": "note",
+      "beat": 13.0,
+      "length": 2.0,
+      "note": "C3"
+    },
+    {
+      "kind": "strum",
+      "beat": 15.0,
+      "length": 9.0,
+      "chord": "E"
+    },
+    {
+      "kind": "note",
+      "beat": 16.0,
+      "length": 1.5,
+      "note": "A2"
+    },
+    {
+      "kind": "note",
+      "beat": 17.5,
+      "length": 0.5,
+      "note": "G#2"
+    },
+    {
+      "kind": "note",
+      "beat": 18.0,
+      "length": 1.0,
+      "note": "A2"
+    },
+    {
+      "kind": "note",
+      "beat": 19.0,
+      "length": 2.0,
+      "note": "B2"
+    },
+    {
+      "kind": "note",
+      "beat": 21.0,
+      "length": 1.0,
+      "note": "G#2"
+    },
+    {
+      "kind": "note",
+      "beat": 22.0,
+      "length": 2.0,
+      "note": "E2"
+    },
+    {
+      "kind": "strum",
+      "beat": 24.0,
+      "length": 3.0,
+      "chord": "Am"
+    },
+    {
+      "kind": "note",
+      "beat": 25.0,
+      "length": 2.0,
+      "note": "C3"
+    },
+    {
+      "kind": "strum",
+      "beat": 27.0,
+      "length": 6.0,
+      "chord": "C"
+    },
+    {
+      "kind": "note",
+      "beat": 28.0,
+      "length": 1.5,
+      "note": "E3"
+    },
+    {
+      "kind": "note",
+      "beat": 29.5,
+      "length": 0.5,
+      "note": "F3"
+    },
+    {
+      "kind": "note",
+      "beat": 30.0,
+      "length": 1.0,
+      "note": "E3"
+    },
+    {
+      "kind": "note",
+      "beat": 31.0,
+      "length": 2.0,
+      "note": "D3"
+    },
+    {
+      "kind": "strum",
+      "beat": 33.0,
+      "length": 6.0,
+      "chord": "Em"
+    },
+    {
+      "kind": "note",
+      "beat": 34.0,
+      "length": 1.5,
+      "note": "G2"
+    },
+    {
+      "kind": "note",
+      "beat": 35.5,
+      "length": 0.5,
+      "note": "A2"
+    },
+    {
+      "kind": "note",
+      "beat": 36.0,
+      "length": 1.0,
+      "note": "B2"
+    },
+    {
+      "kind": "note",
+      "beat": 37.0,
+      "length": 1.5,
+      "note": "C3"
+    },
+    {
+      "kind": "note",
+      "beat": 38.5,
+      "length": 0.5,
+      "note": "B2"
+    },
+    {
+      "kind": "strum",
+      "beat": 39.0,
+      "length": 6.0,
+      "chord": "E"
+    },
+    {
+      "kind": "note",
+      "beat": 40.0,
+      "length": 1.5,
+      "note": "G#2"
+    },
+    {
+      "kind": "note",
+      "beat": 41.5,
+      "length": 0.5,
+      "note": "F#2"
+    },
+    {
+      "kind": "note",
+      "beat": 42.0,
+      "length": 1.0,
+      "note": "G#2"
+    },
+    {
+      "kind": "note",
+      "beat": 43.0,
+      "length": 3.0,
+      "note": "A2"
+    },
+    {
+      "kind": "strum",
+      "beat": 45.0,
+      "length": 6.0,
+      "chord": "C"
+    },
+    {
+      "kind": "note",
+      "beat": 46.0,
+      "length": 3.0,
+      "note": "G3"
+    },
+    {
+      "kind": "note",
+      "beat": 49.0,
+      "length": 1.5,
+      "note": "G3"
+    },
+    {
+      "kind": "note",
+      "beat": 50.5,
+      "length": 0.5,
+      "note": "F#3"
+    },
+    {
+      "kind": "strum",
+      "beat": 51.0,
+      "length": 3.0,
+      "chord": "G"
+    },
+    {
+      "kind": "note",
+      "beat": 52.0,
+      "length": 2.0,
+      "note": "D3"
+    },
+    {
+      "kind": "strum",
+      "beat": 54.0,
+      "length": 6.0,
+      "chord": "Em"
+    },
+    {
+      "kind": "note",
+      "beat": 55.0,
+      "length": 1.5,
+      "note": "G2"
+    },
+    {
+      "kind": "note",
+      "beat": 56.5,
+      "length": 0.5,
+      "note": "A2"
+    },
+    {
+      "kind": "note",
+      "beat": 57.0,
+      "length": 1.0,
+      "note": "B2"
+    },
+    {
+      "kind": "note",
+      "beat": 58.0,
+      "length": 2.0,
+      "note": "C3"
+    },
+    {
+      "kind": "strum",
+      "beat": 60.0,
+      "length": 9.0,
+      "chord": "E"
+    },
+    {
+      "kind": "note",
+      "beat": 61.0,
+      "length": 1.5,
+      "note": "A2"
+    },
+    {
+      "kind": "note",
+      "beat": 62.5,
+      "length": 0.5,
+      "note": "G#2"
+    },
+    {
+      "kind": "note",
+      "beat": 63.0,
+      "length": 1.0,
+      "note": "A2"
+    },
+    {
+      "kind": "note",
+      "beat": 64.0,
+      "length": 2.0,
+      "note": "B2"
+    },
+    {
+      "kind": "note",
+      "beat": 66.0,
+      "length": 1.0,
+      "note": "G#2"
+    },
+    {
+      "kind": "note",
+      "beat": 67.0,
+      "length": 3.0,
+      "note": "E2"
+    },
+    {
+      "kind": "strum",
+      "beat": 69.0,
+      "length": 6.0,
+      "chord": "C"
+    },
+    {
+      "kind": "note",
+      "beat": 70.0,
+      "length": 3.0,
+      "note": "G3"
+    },
+    {
+      "kind": "note",
+      "beat": 73.0,
+      "length": 1.5,
+      "note": "G3"
+    },
+    {
+      "kind": "note",
+      "beat": 74.5,
+      "length": 0.5,
+      "note": "F#3"
+    },
+    {
+      "kind": "strum",
+      "beat": 75.0,
+      "length": 3.0,
+      "chord": "G"
+    },
+    {
+      "kind": "note",
+      "beat": 76.0,
+      "length": 2.0,
+      "note": "D3"
+    },
+    {
+      "kind": "strum",
+      "beat": 78.0,
+      "length": 6.0,
+      "chord": "Em"
+    },
+    {
+      "kind": "note",
+      "beat": 79.0,
+      "length": 1.5,
+      "note": "G2"
+    },
+    {
+      "kind": "note",
+      "beat": 80.5,
+      "length": 0.5,
+      "note": "A2"
+    },
+    {
+      "kind": "note",
+      "beat": 81.0,
+      "length": 1.0,
+      "note": "B2"
+    },
+    {
+      "kind": "note",
+      "beat": 82.0,
+      "length": 1.5,
+      "note": "C3"
+    },
+    {
+      "kind": "note",
+      "beat": 83.5,
+      "length": 0.5,
+      "note": "B2"
+    },
+    {
+      "kind": "strum",
+      "beat": 84.0,
+      "length": 6.0,
+      "chord": "E"
+    },
+    {
+      "kind": "note",
+      "beat": 85.0,
+      "length": 1.5,
+      "note": "G#2"
+    },
+    {
+      "kind": "note",
+      "beat": 86.5,
+      "length": 0.5,
+      "note": "F#2"
+    },
+    {
+      "kind": "note",
+      "beat": 87.0,
+      "length": 1.0,
+      "note": "G#2"
+    },
+    {
+      "kind": "note",
+      "beat": 88.0,
+      "length": 3.0,
+      "note": "A2"
+    },
+    {
+      "kind": "strum",
+      "beat": 90.0,
+      "length": 1.0,
+      "chord": "Am"
+    }
+  ]
+}
