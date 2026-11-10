@@ -64,8 +64,12 @@ class NowPlayingPage(ctk.CTkFrame):
         self.total = label(bar, "0:00", 13, 400, t.MUTED)
         self.total.grid(row=1, column=1, sticky="e", pady=(6, 0))
 
+        # the bottom swaps between the stop hint while playing and the buttons after
+        self.bottom = ctk.CTkFrame(c, fg_color="transparent")
+        self.bottom.pack(pady=(26, 0))
+
         # while playing: the stop key hint and a Stop button
-        self.live = ctk.CTkFrame(c, fg_color="transparent")
+        self.live = ctk.CTkFrame(self.bottom, fg_color="transparent")
         hint = ctk.CTkFrame(self.live, fg_color="transparent")
         hint.pack()
         label(hint, "Press", 14, 400, t.SOFT).pack(side="left")
@@ -77,9 +81,29 @@ class NowPlayingPage(ctk.CTkFrame):
         button(self.live, "Stop", app.stop_job, "outline", 96).pack(pady=(16, 0))
 
         # when it's over: play again or go back
-        self.after_bar = ctk.CTkFrame(c, fg_color="transparent")
+        self.after_bar = ctk.CTkFrame(self.bottom, fg_color="transparent")
         button(self.after_bar, "Play again", self.play_again, "fill").pack(side="left")
         button(self.after_bar, "Back to library", lambda: app.show("Library"), "outline").pack(side="left", padx=12)
+
+        self.hold_size(self.mid, (self.count, self.stats, self.result))
+        self.hold_size(self.bottom, (self.live, self.after_bar))
+
+    def hold_size(self, holder, parts):
+        """Stacks the parts in one spot and keeps the spot as big as the biggest of them, so swapping
+        from one to another never moves the rest of the screen · without this, the switch from the
+        countdown to the live values made everything jump, and it could show a torn frame."""
+        self.number.configure(text="5")                  # sample text, so each part is measured at its full size
+        for name, sample in (("Wheel", "C#"), ("Note", "C#m"), ("Bar", "88 / 88")):
+            self.values[name][1].configure(text=sample)
+        self.result_title.configure(text="Finished")
+        self.result_line.configure(text="Notes landed 88 ms late on average")
+        for part in parts:
+            part.grid(row=0, column=0)
+        holder.update_idletasks()
+        holder.grid_rowconfigure(0, minsize=max(part.winfo_reqheight() for part in parts))
+        holder.grid_columnconfigure(0, minsize=max(part.winfo_reqwidth() for part in parts))
+        for part in parts:
+            part.grid_remove()
 
     # ── starting ──
 
@@ -100,8 +124,8 @@ class NowPlayingPage(ctk.CTkFrame):
         self.set_progress(0)
         self.show_part(self.count)
         self.number.configure(text=str(settings.load()["countdown"]))
-        self.after_bar.pack_forget()
-        self.live.pack(pady=(26, 0))
+        self.after_bar.grid_remove()
+        self.live.grid()
         self.app.run(play_job(song, speed), self.on_message)
 
     def play_again(self):
@@ -158,18 +182,19 @@ class NowPlayingPage(ctk.CTkFrame):
             title = "Stopped"
             line = f"At {clock(stopped_at)} of {clock(self.length)}" if self.got_step else "Before the first note"
             colour = t.SOFT
+            self.set_progress(stopped_at)             # the bar and clock stop where the last note played
         else:
             title, line, colour = "Finished", value.replace("Finished · ", "").capitalize(), t.SOFT
             self.set_progress(self.length)
         self.result_title.configure(text=title)
         self.result_line.configure(text=line, text_color=colour)
         self.show_part(self.result)
-        self.live.pack_forget()
-        self.after_bar.pack(pady=(26, 0))
+        self.live.grid_remove()
+        self.after_bar.grid()
 
     def show_part(self, part):
         for p in (self.count, self.stats, self.result):
             if p is part:
-                p.pack()
+                p.grid()
             else:
-                p.pack_forget()
+                p.grid_remove()

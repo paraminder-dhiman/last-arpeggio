@@ -14,7 +14,7 @@ from .playing import Background, Previewer
 from .settings_page import SettingsPage
 from .widgets import Row, label
 
-VERSION = "v0.1.0"
+VERSION = "v0.1.1"
 PAGES = [("Library", "library", LibraryPage), ("Import", "import", ImportPage), ("Settings", "settings", SettingsPage)]
 DATA = Path(__file__).resolve().parent.parent / "data"
 

@@ -31,7 +31,7 @@ The guitar in Part II is played with a wheel of chords and six strings. The Last
 
 ## Getting started
 
-1. Download `TheLastArpeggio-v0.1.0-windows.zip` from the [latest release](https://github.com/paraminder-dhiman/last-arpeggio/releases/latest) and unzip it anywhere.
+1. Download the `TheLastArpeggio-…-windows.zip` file from the [latest release](https://github.com/paraminder-dhiman/last-arpeggio/releases/latest) and unzip it anywhere.
 2. Run `TheLastArpeggio.exe`.
    Windows may show a blue *Windows protected your PC* box, because the app isn't signed with a paid certificate. Click **More info**, then **Run anyway**.
 3. Start the game and pick up a guitar, so the chord wheel is on screen.
@@ -109,7 +109,7 @@ To build the release yourself, run `python scripts/build_release.py`. The app la
 
 ## How it was made
 
-Built by Paraminder Dhiman. I used Claude, Anthropic's AI assistant, throughout the project: to plan it, to write and review much of the code, and to design the interface. I tested and tuned everything in the game myself.
+The first version, a script that played songs from text files, was built by me. The 2026 version was rebuilt with AI-assisted scripting, directed, tested and tuned by me in the game. More on how it works is on its [portfolio page](https://paraminder-dhiman.github.io/last-arpeggio.html).
 
 ## Credits
 
