@@ -5,3 +5,5 @@ pygetwindow
 pynput
 mido
 numpy
+customtkinter>=6.0
+pillow

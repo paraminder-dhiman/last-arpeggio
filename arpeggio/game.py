@@ -8,6 +8,22 @@ from . import guitar
 pydirectinput.PAUSE = 0
 pydirectinput.FAILSAFE = False
 
+APP_TITLE = "The Last Arpeggio"
+
+
+def looks_like_game(title):
+    return "last of us part ii" in title.lower().replace("™", "")
+
+
+def open_windows():
+    """Titles of the windows open on the desktop, for picking the game."""
+    titles = []
+    for w in pygetwindow.getAllWindows():
+        title = w.title.strip()
+        if title and title not in (APP_TITLE, "Program Manager") and title not in titles:
+            titles.append(title)
+    return sorted(titles, key=str.lower)
+
 class Game:
     """Everything that touches the game: the mouse picks chords, the keys switch wheels and play."""
 
@@ -68,9 +84,21 @@ class Game:
         self.centre()
         self.switch_wheel(guitar.HOME_WHEEL)
 
-    def focus(self):
-        windows = pygetwindow.getWindowsWithTitle(self.s["window_title"])
+    def find(self):
+        """The game's window: the one picked in Settings, or anything that looks like the game."""
+        title = self.s["window_title"].strip()
+        windows = pygetwindow.getWindowsWithTitle(title) if title else []
         if not windows:
-            raise RuntimeError(f"Couldn't find the game window: {self.s['window_title']}")
-        windows[0].activate()
+            windows = [w for w in pygetwindow.getAllWindows() if looks_like_game(w.title)]
+        return windows[0] if windows else None
+
+    def focus(self):
+        window = self.find()
+        if window is None:
+            raise RuntimeError("Couldn't find the game · is it running? You can pick its window in Settings")
+        try:
+            window.activate()
+        except pygetwindow.PyGetWindowException:
+            window.minimize()                 # Windows sometimes refuses activate() · this brings it forward instead
+            window.restore()
         time.sleep(0.5)

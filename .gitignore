@@ -5,3 +5,4 @@ dist/
 *.spec
 songs/
 settings.json
+arpeggio.log

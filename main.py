@@ -1,4 +1,4 @@
-from arpeggio import __version__
+from arpeggio.ui.app import App
 
 if __name__ == "__main__":
-    print(f"The Last Arpeggio {__version__}")
+    App().mainloop()

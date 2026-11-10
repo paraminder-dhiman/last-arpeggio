@@ -10,6 +10,7 @@ DEFAULTS = {
     "countdown": 5,             # seconds before a song starts
     "stop_key": "f8",
     "window_title": "The Last of Us™ Part II",
+    "theme": "system",
 }
 
 def load():
@@ -20,3 +21,7 @@ def load():
 
 def save(settings):
     FILE.write_text(json.dumps(settings, indent=2))
+
+def key_label(combo):
+    """ctrl+shift+f8 -> Ctrl + Shift + F8"""
+    return " + ".join(k.upper() if len(k) <= 3 else k.replace("_", " ").title() for k in combo.split("+"))

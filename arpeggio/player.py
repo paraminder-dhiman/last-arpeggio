@@ -22,12 +22,10 @@ class Player:
         self.late = []                       # how late each sound landed, in seconds
 
     def _listen(self):
-        stop_key = getattr(keyboard.Key, self.s["stop_key"])
-        def on_press(key):
-            if key == stop_key:
-                self.stop.set()
-                return False                 # ends the listener
-        listener = keyboard.Listener(on_press=on_press)
+        combo = "+".join(f"<{k}>" if len(k) > 1 else k for k in self.s["stop_key"].split("+"))
+        hotkey = keyboard.HotKey(keyboard.HotKey.parse(combo), self.stop.set)
+        listener = keyboard.Listener(on_press=lambda k: hotkey.press(listener.canonical(k)),
+                                     on_release=lambda k: hotkey.release(listener.canonical(k)))
         listener.start()
         return listener
 
